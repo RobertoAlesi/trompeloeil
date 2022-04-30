@@ -18,7 +18,7 @@ async function loadObjects() {
     object.scale.set(0.15, 0.15, 0.15);
     object.position.set(0, 0, -0.02);
   } else {
-    const data = await loader.loadAsync('/vangogh.glb');
+    const data = await loader.loadAsync('https://vivien000.github.io/trompeloeil/models/vangogh.glb');
     object = setupModel(data);
     object.scale.set(0.2, 0.2, 0.2);
     object.position.set(0, -0.3, -0.5);
