@@ -8,7 +8,7 @@ async function loadObjects() {
   let object;
 
   if (objectID == 0) {
-    const data = await loader.loadAsync ('pollo');
+    const data = await loader.loadAsync ('../../../../models/tie.glb');
     object = setupModel(data);
     object.scale.set(0.00002, 0.00002, 0.00002);
     object.position.set(0, 0, -0.05);
